@@ -23,6 +23,8 @@ export const Container = styled.div<ContainerProps>`
         font-size: 16px;
         transition: opacity 0.2s;
 
+        padding-bottom: 12px; // ####
+
         & + a {
           margin-left: 32px;
         }
@@ -31,6 +33,17 @@ export const Container = styled.div<ContainerProps>`
           opacity: 0.6;
         }
       }
+
+      a.active {
+        border-bottom: 2px solid #ff872c;
+      }
+      /**
+      position: absolute;
+width: 73px;
+height: 2px;
+left: 1102px;
+top: 69px;
+       */
     }
   }
 `;
